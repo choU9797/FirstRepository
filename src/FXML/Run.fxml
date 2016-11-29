@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RunController">
+	<children>
+		<StackPane alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+      				<Pane fx:id="pane" blendMode="SRC_OVER" focusTraversable="true" prefHeight="500.0" prefWidth="800.0" />
+				<VBox fillWidth="false" maxHeight="241.0" maxWidth="244.0" prefHeight="241.0" prefWidth="244.0" spacing="5.0">
+					<children>
+						<Label fx:id="name" prefHeight="26.0" prefWidth="166.0" textAlignment="CENTER" textFill="#f89875" wrapText="true" />
+
+						<ComboBox fx:id="no_combobox" prefHeight="27.0" prefWidth="168.0" promptText="Select No" />
+						<TextField fx:id="rundistance" maxHeight="50.0" maxWidth="150.0" promptText="走行距離" />
+						<TextField fx:id="emptydistance" maxHeight="50.0" maxWidth="150.0" promptText="空車距離" />
+						<DatePicker fx:id="datepicker" maxWidth="150.0" promptText="Select Date" />
+						<ComboBox fx:id="transport_combobox" prefHeight="27.0" prefWidth="168.0" promptText="Select Transport" />
+						<Button fx:id="add_button" mnemonicParsing="false" prefHeight="27.0" prefWidth="167.0" text="Add" textFill="#e250ff" />
+						<Button fx:id="delete_button" mnemonicParsing="false" prefHeight="27.0" prefWidth="167.0" text="Delete" textFill="#6e82e4" />
+					</children>
+					<opaqueInsets>
+						<Insets left="50.0" />
+					</opaqueInsets>
+					<padding>
+						<Insets left="35.0" />
+					</padding>
+				</VBox>
+			</children>
+		</StackPane>
+		<Label fx:id="titlelabel" layoutX="70.0" layoutY="84.0" rotate="33.0" text="Edit RunData" />
+      <ScrollPane layoutX="240.0" layoutY="60.0" prefHeight="400.0" prefWidth="550.0">
+        <content>
+          <AnchorPane prefHeight="400.0" prefWidth="530.0">
+               <children>
+            		<TableView fx:id="tableview" maxHeight="300.0" maxWidth="520.0" opacity="0.74" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            			<columns>
+            				<TableColumn fx:id="no_column" prefWidth="75.0" text="No." />
+            				<TableColumn fx:id="name_column" prefWidth="75.0" text="Name" />
+            				<TableColumn fx:id="run_column" prefWidth="75.0" text="走行距離" />
+            				<TableColumn fx:id="exist_column" prefWidth="75.0" text="実車距離" />
+            				<TableColumn fx:id="date_column" prefWidth="75.0" text="Date" />
+            				<TableColumn fx:id="transport_column" prefWidth="75.0" text="TransPort" />
+            			</columns>
+            			<columnResizePolicy>
+            				<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            			</columnResizePolicy>
+            		</TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+	</children>
+</AnchorPane>

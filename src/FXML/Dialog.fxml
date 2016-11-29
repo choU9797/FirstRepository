@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DialogController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="cancel_button" layoutX="308.0" layoutY="159.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" text="Cancel" />
+            <Button fx:id="ok_button" layoutX="210.0" layoutY="159.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" text="OK" />
+            <Label layoutX="47.0" layoutY="53.0" prefHeight="38.0" prefWidth="326.0" text="印刷してよろしいですか？" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

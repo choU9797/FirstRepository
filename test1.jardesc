@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/Volumes/Untitled/Graduation Thesis/test1.jar"/>
+    <options buildIfNeeded="true" compress="false" descriptionLocation="/GraduationThesisver2.0/test1.jardesc" exportErrors="false" exportWarnings="false" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <selectedElements exportClassFiles="false" exportJavaFiles="true" exportOutputFolder="false">
+        <file path="/GraduationThesisver2.0/build.fxbuild"/>
+        <file path="/GraduationThesisver2.0/.project"/>
+        <javaElement handleIdentifier="=GraduationThesisver2.0/src"/>
+        <file path="/GraduationThesisver2.0/.classpath"/>
+        <file path="/GraduationThesisver2.0/mydatabase.sqlite"/>
+    </selectedElements>
+</jardesc>

@@ -1,0 +1,16 @@
+.button{
+	-fx-background-radius: 100.0;
+	-fx-background-color:#7fffd4;
+	-fx-text-fill: #808080
+}
+.button:hover{
+	-fx-background-color: cornflowerblue;
+	-fx-text-fill: ghostwhite
+}
+.root{
+	-fx-background-color:#ffff00
+}
+.label{
+	-fx-font-size: 20.0px;
+	-fx-text-fill: black;
+}

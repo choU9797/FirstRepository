@@ -1,0 +1,13 @@
+.root{
+	-fx-background-color: #ffff00;
+}
+.tab{
+	-fx-background-color: white;
+	-fx-border-color: orangered;
+}
+.tab:hover{
+	-fx-background-color: orangered;
+}
+#tabpane{
+	-fx-background-color: #ffff00;
+}

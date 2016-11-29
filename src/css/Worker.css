@@ -1,0 +1,40 @@
+.root{
+	-fx-background-color: #ffff00
+}
+.button{
+	-fx-background-radius: 100.0;
+	-fx-background-color:#7fffd4;
+	-fx-text-fill: #808080
+}
+.button:hover{
+	-fx-background-color: cornflowerblue;
+	-fx-text-fill: ghostwhite
+}
+.text-field{
+	-fx-background-radius: 30.0px;
+	-fx-background-color: lightslategrey;
+	-fx-text-fill: ghostwhite;
+	-fx-prompt-text-fill: ghostwhite
+}
+#titlelabel{
+	-fx-text-fill: darkblue;
+	-fx-font-size: 20.0px;
+}
+#delete_button{
+	-fx-background-radius: 100.0;
+	-fx-background-color:orangered;
+	-fx-text-fill: ghostwhite
+}
+#delete_button:hover{
+	-fx-background-color: deeppink;
+	-fx-text-fill: ghostwhite
+}
+.combo-box{
+	-fx-background-radius: 30.0px;
+	-fx-background-color: springgreen;
+	-fx-progress-color: ghostwhite
+}
+.combo-box:hover{
+	-fx-background-color: lime;
+	-fx-text-fill: ghostwhite
+}

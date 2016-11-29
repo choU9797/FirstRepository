@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SalesController">
+   <children>
+      <StackPane alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id= "pane" prefHeight="200.0" prefWidth="200.0" />
+            <VBox maxHeight="200.0" maxWidth="250.0" prefHeight="251.0" prefWidth="223.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="name" promptText="取引先" />
+                  <TextField fx:id="profit" promptText="売り上げ（千円）" />
+                  <TextField fx:id="jitu" promptText="実運送（トン数）" />
+                  <TextField fx:id="riyou" promptText="利用運送（トン数）" />
+                  <DatePicker fx:id="datepicker" prefHeight="27.0" prefWidth="266.0" promptText="select date" />
+                  <ComboBox fx:id="combobox" prefHeight="27.0" prefWidth="262.0" promptText="select Transport" />
+                  <Button fx:id="add_button" mnemonicParsing="false" prefHeight="27.0" prefWidth="262.0" text="Add" textFill="#f09f5d" />
+                  <Button fx:id="delete_button" mnemonicParsing="false" prefHeight="27.0" prefWidth="263.0" text="Delete" textFill="#6ceecd" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <StackPane.margin>
+                  <Insets left="20.0" />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+      <TableView fx:id="tableview" layoutX="290.0" layoutY="50.0" prefHeight="384.0" prefWidth="479.0">
+        <columns>
+          <TableColumn fx:id="name_column" prefWidth="75.0" text="取引先" />
+          <TableColumn fx:id="profit_column" prefWidth="75.0" text="売り上げ" />
+            <TableColumn fx:id="jitu_column" prefWidth="75.0" text="実運送(t)" />
+            <TableColumn fx:id="riyou_column" prefWidth="75.0" text="利用運送(t)" />
+            <TableColumn fx:id="date_column" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="transport_column" prefWidth="75.0" text="Transport" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="titlelabel" layoutX="90.0" layoutY="80.0" text="Edit SalesData" />
+   </children>
+</AnchorPane>

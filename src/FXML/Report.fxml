@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="566.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReportController">
+	<children>
+      <StackPane prefHeight="566.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="566.0" prefWidth="638.0" />
+      		
+      		<TabPane fx:id="tabpane" blendMode="SCREEN" maxHeight="450.0" maxWidth="400.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="465.0" prefWidth="400.0" tabClosingPolicy="ALL_TABS" StackPane.alignment="CENTER">
+      			<tabs>
+      				<Tab closable="false" text="基本情報入力">
+                     <content>
+      						<VBox alignment="CENTER_LEFT" prefHeight="391.0" prefWidth="400.0">
+      							<children>
+                              <Label prefHeight="25.0" prefWidth="64.0" text="区分特定">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="42.0" prefWidth="400.0" spacing="30.0">
+                                 <children>
+                                    <RadioButton fx:id="ippan" mnemonicParsing="false" text="一般" />
+                                    <RadioButton fx:id="tokuseki" mnemonicParsing="false" text="特積" />
+                                    <RadioButton fx:id="riyoubutton" mnemonicParsing="false" text="利用" />
+                                    <RadioButton fx:id="reikyu" lineSpacing="10.0" mnemonicParsing="false" text="霊柩" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label text="事業者番号">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="jigyousya" maxWidth="300.0" promptText="事業者番号">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="住所">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+      								<TextField fx:id="adress" maxWidth="300.0" prefHeight="27.0" prefWidth="229.0" promptText="住所">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="事業者名">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+      								<TextField fx:id="business" maxWidth="300.0" promptText="事業者名">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="代表者名">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+      								<TextField fx:id="represent" maxWidth="300.0" promptText="代表者名">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="電話番号">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </Label>
+      								<TextField fx:id="tell" maxWidth="300.0" promptText="電話番号">
+                                 <VBox.margin>
+                                    <Insets left="50.0" />
+                                 </VBox.margin>
+                              </TextField>
+      							</children>
+      						</VBox>
+                     </content>
+      				</Tab>
+      				<Tab closable="false" text="事業概況・事業内容 ">
+      					<content>
+      						<VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+      							<children>
+      								<Label text="事業概況">
+      									<font>
+      										<Font size="14.0" />
+      									</font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+      								</Label>
+      								<HBox prefHeight="55.0" prefWidth="408.0" spacing="10.0">
+      									<children>
+                                    <VBox prefHeight="90.0" prefWidth="125.0">
+                                       <children>
+                                          <Label text="事業用自動車数" />
+            										<TextField fx:id="car" prefHeight="27.0" prefWidth="88.0" promptText="事業用自動車数">
+            											<font>
+            												<Font size="10.0" />
+            											</font>
+            										</TextField>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="90.0" prefWidth="125.0">
+                                       <children>
+                                          <Label text="従業員数" />
+            										<TextField fx:id="employee" prefHeight="27.0" prefWidth="100.0" promptText="従業員数" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="90.0" prefWidth="125.0">
+                                       <children>
+                                          <Label text="運転者数" />
+            										<TextField fx:id="driver" prefHeight="27.0" prefWidth="88.0" promptText="運転者数" />
+                                       </children>
+                                    </VBox>
+      									</children>
+      								</HBox>
+      								<Label text="事業内容">
+      									<font>
+      										<Font size="14.0" />
+      									</font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+      								</Label>
+      								<VBox prefHeight="231.0" prefWidth="374.0" spacing="5.0">
+      									<children>
+      										<RadioButton fx:id="check1" mnemonicParsing="false" text="ダンプによる土砂等輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check2" mnemonicParsing="false" text="冷凍、冷蔵輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check3" mnemonicParsing="false" text="基準緩和認定車両による長大物品等輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check4" mnemonicParsing="false" text="原木、製材輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check5" mnemonicParsing="false" text="国際海上コンテナ輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check6" mnemonicParsing="false" text="引越輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check7" mnemonicParsing="false" text="コンクリートミキサー車による生コンクリート輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<RadioButton fx:id="check8" mnemonicParsing="false" text="危険物等輸送">
+      											<font>
+      												<Font size="14.0" />
+      											</font>
+      										</RadioButton>
+      										<FlowPane hgap="10.0" prefHeight="29.0" prefWidth="361.0">
+      											<children>
+      												<RadioButton fx:id="check9" mnemonicParsing="false" text="その他">
+      													<font>
+      														<Font size="14.0" />
+      													</font>
+      												</RadioButton>
+      												<TextField fx:id="check9_field" prefHeight="27.0" prefWidth="274.0" />
+      											</children>
+      										</FlowPane>
+      									</children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+      								</VBox>
+      							</children>
+      							<padding>
+      								<Insets top="10.0" />
+      							</padding>
+      						</VBox>
+      					</content>
+      				</Tab>
+      				<Tab closable="false" text="輸送実績">
+      					<content>
+      						<Pane prefHeight="200.0" prefWidth="200.0">
+      							<children>
+      								<VBox layoutX="35.0" layoutY="43.0" prefHeight="341.0" prefWidth="304.0">
+      									<children>
+      										<ComboBox fx:id="combobox" prefWidth="150.0" />
+                                    <Label text="延実在車両数" />
+      										<TextField fx:id="zituzai" promptText="延実在車両数" />
+                                    <Label text="延実働車両数" />
+      										<TextField fx:id="zitudou" promptText="延実働車両数" />
+                                    <Label text="走行キロ" />
+      										<TextField fx:id="soukou" promptText="走行キロ" />
+                                    <Label text="実車キロ" />
+      										<TextField fx:id="jisya" promptText="実車キロ" />
+                                    <Label text="実運送" />
+      										<TextField fx:id="jitu" promptText="実運送" />
+                                    <Label text="利用運送" />
+      										<TextField fx:id="riyou" promptText="利用運送" />
+                                    <Label text="営業収入" />
+      										<TextField fx:id="eigyou" promptText="営業利益" />
+      									</children>
+      								</VBox>
+      							</children>
+      						</Pane>
+      					</content>
+      				</Tab>
+                  <Tab closable="false" text="事故件数">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="127.0" layoutY="121.0" prefHeight="193.0" prefWidth="121.0">
+                                 <children>
+                                    <Label text="交通事故件数" />
+                                    <TextField fx:id="car_accident" />
+                                    <Label text="重大事故件数" />
+                                    <TextField fx:id="heavy_accident" />
+                                    <Label text="死者数" />
+                                    <TextField fx:id="dead" />
+                                    <Label text="負傷者数" />
+                                    <TextField fx:id="injuries" />
+                                 </children>
+                              </VBox>
+                              <Label layoutX="127.0" layoutY="94.0" text="事故件数" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+      			</tabs>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+      		</TabPane>
+         </children>
+      </StackPane>
+	</children>
+</AnchorPane>
